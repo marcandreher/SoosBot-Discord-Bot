@@ -47,7 +47,7 @@ public class Main {
 	    BufferedReader br = new BufferedReader(isr);
 	    Scanner sc = new Scanner(br);
 		
-		builder.setToken("MzkzMDU0MDUxNzY1MzIxNzQ5.DRwMhg.sdimJEk7_tkM3tgEHlTe9pqKWnQ");
+		builder.setToken("ForgetItAndGetYourOwnToken");
 		builder.setGame(Game.playing("-help [Ver. 2.1.4]"));
 		builder.setAutoReconnect(true);
 		builder.setStatus(OnlineStatus.ONLINE);
