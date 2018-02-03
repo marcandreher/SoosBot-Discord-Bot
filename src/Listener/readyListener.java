@@ -8,7 +8,7 @@ public class readyListener extends ListenerAdapter{
 	
 	public void onReady(ReadyEvent event) {
 		
-		String out = "\nDieser Bot läuft auf folgenen Server: \n";
+		String out = "\nThis Bot is running on Following Servers: \n";
 		
 		for (Guild g : event.getJDA().getGuilds()) {
 			out += g.getName()+"("+g.getId()+","+g.getIdLong()+") \n";

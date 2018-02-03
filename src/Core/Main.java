@@ -12,7 +12,6 @@ import Commands.cmdClear;
 import Commands.cmdHelp;
 import Commands.cmdHentai;
 import Commands.cmdInvite;
-import Commands.cmdKompliment;
 import Commands.cmdMusic;
 import Commands.cmdPing;
 import Commands.cmdPong;
@@ -47,7 +46,7 @@ public class Main {
 	    BufferedReader br = new BufferedReader(isr);
 	    Scanner sc = new Scanner(br);
 		
-		builder.setToken("ForgetItAndGetYourOwnToken");
+		builder.setToken("Forget it Please xD");
 		builder.setGame(Game.playing("-help [Ver. 2.1.4]"));
 		builder.setAutoReconnect(true);
 		builder.setStatus(OnlineStatus.ONLINE);
@@ -66,7 +65,6 @@ public class Main {
 		commandHandler.commands.put("invite", new cmdInvite());
 		commandHandler.commands.put("randomytk", new cmdYTKRandom());
 		commandHandler.commands.put("music", new cmdMusic());
-		commandHandler.commands.put("kompliment", new cmdKompliment());
 		commandHandler.commands.put("clear", new cmdClear());
 		commandHandler.commands.put("anime", new cmdAnime());
 		commandHandler.commands.put("setidle", new cmdSetIdle());

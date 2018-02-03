@@ -15,12 +15,12 @@ public class cmdSetIdle implements Command{
 	@Override
 	public void action(String[] args, MessageReceivedEvent event) {
 		Main.builder.setStatus(OnlineStatus.IDLE);
-		event.getTextChannel().sendMessage("Der Bot wird nun auf allen Servern mit dem Status **IDLE** versehen!").queue();;
+		event.getTextChannel().sendMessage("The Bot has now The Status 'IDLE'").queue();;
 	}
 
 	@Override
 	public void executed(boolean success, MessageReceivedEvent event) {
-		System.out.println("IDLE wurde ausgeführt");
+		System.out.println(event.getMessage() + "executed from "+event.getMember().getNickname());
 		
 	}
 

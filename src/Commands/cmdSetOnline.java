@@ -15,12 +15,12 @@ public class cmdSetOnline implements Command{
 	@Override
 	public void action(String[] args, MessageReceivedEvent event) {
 		Main.builder.setStatus(OnlineStatus.ONLINE);
-		event.getTextChannel().sendMessage("Der Bot wird nun auf allen Servern mit dem Status **ONLINE** versehen!").queue();;
+		event.getTextChannel().sendMessage("The Bot has now The Status 'ONLINE'").queue();;
 	}
 
 	@Override
 	public void executed(boolean success, MessageReceivedEvent event) {
-		System.out.println("ONLINE wurde ausgeführt");
+		System.out.println(event.getMessage() + "executed from "+event.getMember().getNickname());
 		
 	}
 

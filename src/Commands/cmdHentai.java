@@ -19,14 +19,14 @@ public class cmdHentai implements Command{
 		if(event.getTextChannel().getName().equalsIgnoreCase("hentai-chat")) {
 			event.getTextChannel().sendMessage(random).queue();;
 		}else{
-			event.getTextChannel().sendMessage("Nur im #hentai channel erlaubt").queue();;
+			event.getTextChannel().sendMessage("Only Allowed in the #hentai-chat Channel!").queue();;
 		}
 		
 	}
 
 	@Override
 	public void executed(boolean success, MessageReceivedEvent event) {
-		System.out.println(event.getMessage() + "wurde von "+event.getMember().getNickname()+" ausgeführt");
+		System.out.println(event.getMessage() + "executed from "+event.getMember().getNickname());
 		
 	}
 

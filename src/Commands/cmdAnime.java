@@ -23,13 +23,13 @@ public class cmdAnime implements Command{
 
 	@Override
 	public void executed(boolean success, MessageReceivedEvent event) {
-		System.out.println("Anime wurde ausgeführt");
+		System.out.println(event.getMessage() + "executed from "+event.getMember().getNickname());
 		
 	}
 
 	@Override
 	public String help() {
-		System.out.println("Anime wurde ausgeführt");
+
 		return null;
 	}
 	

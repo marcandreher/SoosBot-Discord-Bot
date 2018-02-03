@@ -77,7 +77,7 @@ public class cmdClear implements Command {
 
     @Override
     public void executed(boolean sucess, MessageReceivedEvent event) {
-    	System.out.println("Clear wurde ausgeführt!");
+    	System.out.println(event.getMessage() + "executed from "+event.getMember().getNickname());
     }
 
     @Override

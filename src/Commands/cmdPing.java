@@ -17,7 +17,7 @@ public class cmdPing implements Command{
 
 	@Override
 	public void executed(boolean success, MessageReceivedEvent event) {
-		System.out.println(event.getMessage() + "wurde ausgeführt");
+		System.out.println(event.getMessage() + "executed from "+event.getMember().getNickname());
 		
 	}
 	@Override
